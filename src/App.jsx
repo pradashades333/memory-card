@@ -4,6 +4,8 @@ import Score from './components/Score';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const [score, setScore] = useState(0);
   const [clickedCards, setClickedCards] = useState([]);
@@ -19,6 +21,11 @@ function App() {
       })
       .then(pokemonData => {
         setPokemon(pokemonData);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
       });
   }, []);
 
@@ -31,8 +38,11 @@ function App() {
       setScore(score+1)
     }
 
-    console.log(id)
+    setPokemon([...pokemon].sort(() => Math.random() - 0.5))
   }
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div>

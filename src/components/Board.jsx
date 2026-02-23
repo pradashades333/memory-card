@@ -1,10 +1,11 @@
 import Card from "./Card";
 
-function Board({ pokemon, }) {
+function Board({ pokemon, cardClick}) {
   return (
     <div>
       {pokemon.map(p => (
-        <Card name={p.name} image={p.sprites.front_default} key = {p.id}/>
+        <Card name={p.name} image={p.sprites.front_default} key = {p.id}
+        onClick = {() => cardClick(p.id)}/>
       ))}
     </div>
   );
