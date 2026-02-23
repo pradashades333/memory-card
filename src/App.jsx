@@ -45,7 +45,7 @@ function App() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
+    <div className="app">
       <h1>Memory Card Game</h1>
       <Score/>
       <Board pokemon={pokemon} cardClick={cardClick} />
