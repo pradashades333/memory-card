@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import GameBoard from './components/GameBoard';
-import ScoreBoard from './components/ScoreBoard';
+import Board from './components/Board';
+import Score from './components/Score';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -22,8 +22,8 @@ function App() {
   return (
     <div>
       <h1>Memory Card Game</h1>
-      <ScoreBoard />
-      <GameBoard pokemon={pokemon} />
+      <Score/>
+      <Board pokemon={pokemon} />
     </div>
   );
 }
