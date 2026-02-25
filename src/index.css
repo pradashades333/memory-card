@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a2e;
+  background-color: #1a0e14;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@ h1 {
   font-size: 2.2em;
   margin: 0 0 0.5rem;
   text-align: center;
-  color: #a78bfa;
+  color: #f472b6;
 }
 
 .app {
@@ -42,7 +42,7 @@ h1 {
 }
 
 .score strong {
-  color: #a78bfa;
+  color: #f472b6;
 }
 
 .board {
@@ -52,7 +52,7 @@ h1 {
 }
 
 .card {
-  background-color: #16213e;
+  background-color: #2a1020;
   border: 2px solid #333;
   border-radius: 10px;
   padding: 1rem 0.75rem;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .card:hover {
-  border-color: #a78bfa;
+  border-color: #f472b6;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -92,7 +92,7 @@ h1 {
   }
 
   h1 {
-    color: #7c3aed;
+    color: #ec4899;
   }
 
   .card {
@@ -101,7 +101,7 @@ h1 {
   }
 
   .card:hover {
-    border-color: #7c3aed;
+    border-color: #ec4899;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
