@@ -11,8 +11,4 @@ function Board({ pokemon, cardClick}) {
   );
 }
 
-<<<<<<< HEAD
 export default Board;
-=======
-export default Board;
->>>>>>> 5e481b5 (added score and total score)
