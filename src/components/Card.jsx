@@ -7,4 +7,8 @@ function Card({name, image, onClick}) {
   );
 }
 
+<<<<<<< HEAD
 export default Card;
+=======
+export default Card;
+>>>>>>> 5e481b5 (added score and total score)

@@ -1,7 +1,8 @@
-function Score() {
+function Score({score, bestScore}) {
   return (
     <div>
-      <p>ScoreBoard</p>
+      <p>Your score:{score}</p>
+      <p>Best score: {bestScore} </p>
     </div>
   );
 }

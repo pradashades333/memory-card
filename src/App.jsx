@@ -7,6 +7,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const[bestScore, setBestScore] = useState(0);
   const [score, setScore] = useState(0);
   const [clickedCards, setClickedCards] = useState([]);
 
@@ -36,6 +37,9 @@ function App() {
     } else {
       setClickedCards([...clickedCards, id])
       setScore(score+1)
+      if(score + 1 > bestScore) {
+        setBestScore(score + 1)
+      }
     }
 
     setPokemon([...pokemon].sort(() => Math.random() - 0.5))
@@ -47,7 +51,7 @@ function App() {
   return (
     <div className="app">
       <h1>Memory Card Game</h1>
-      <Score/>
+      <Score score = {score} bestScore = {bestScore} />
       <Board pokemon={pokemon} cardClick={cardClick} />
     </div>
   );
